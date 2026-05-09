@@ -12,6 +12,8 @@ public class Corrector {
             count++;
             stringBuilder.append(count).append(") ").append(str).append("\n");
         }
+        stringBuilder.deleteCharAt(stringBuilder.length() - 1);
+
         return stringBuilder.toString();
     }
 }
